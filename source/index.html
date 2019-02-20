@@ -9,7 +9,252 @@
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <header class="header">
+    <div class="header-top-container">
+      <div class="logo">
+        <svg width="68" height="18" fill="rgb(0, 0, 0)">
+          <use xlink:href="#logo-mobile"></use>
+        </svg>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Наши торты</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Индивидуальный заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Отзывы</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Как заказать</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <button class="main-nav__toggle" type="button" aria-label="Показать или спрятать навигацию по сайту"></button>
+      </nav>
+      <p class="phone-number">+7 906 899 92 96</p>
+    </div>
+    <div class="page-preview">
+      <h1 class="page-preview__title page-title">Торты на заказ</h1>
+      <span class="page-preview__advantage">Ручная работа</span>
+      <ul class="page-preview__advantages-list">
+        <li class="page-preview__advantages-item">Натуральные ингредиенты</li>
+        <li class="page-preview__advantages-item">Доставка бесплатно при заказе от 2000 рублей*</li>
+      </ul>
+      <a class="page-preview__order-button" href="#">Выбрать торт</a>
+    </div>
+  </header>
   <script src="js/main.js"></script>
+  <main>
+    <section class="assortment">
+      <h2 class="section-title">Наши торты</h2>
+      <ul class="assortment__list assortment__list--first-group">
+        <li class="assortment__item">
+          <a class="assortment__link">
+            <h3 class="assortment__title">Классические</h3>
+            <span class="assortment__count">24 вида</span>
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 1366px)"
+                srcset="img/type-classic-desktop.webp">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/type-classic-tablet.webp">
+              <source type="image/webp" srcset="img/type-classic-mobile.webp"> -->
+
+              <source media="(min-width: 1366px)" srcset="img/type-classic-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/type-classic-tablet.jpg">
+              <img class="assor" src="img/type-classic-mobile.jpg" alt="Классический торт">
+            </picture>
+          </a>
+        </li>
+        <li class="assortment__item">
+          <a class="assortment__link">
+            <h3 class="assortment__title">Муссовые</h3>
+            <span class="assortment__count">12 видов</span>
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 1366px)"
+                  srcset="img/type-mousse-desktop.webp">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/type-mousse-tablet.webp">
+                <source type="image/webp" srcset="img/type-mousse-mobile.webp"> -->
+
+              <source media="(min-width: 1366px)" srcset="img/type-mousse-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/type-mousse-tablet.jpg">
+              <img class="assortment__image" src="img/type-mousse-mobile.jpg" alt="Муссовый торт">
+            </picture>
+          </a>
+        </li>
+        <li class="assortment__item">
+          <a class="assortment__link">
+            <h3 class="assortment__title">Свадебные</h3>
+            <span class="assortment__count">20 видов</span>
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 1366px)"
+                    srcset="img/type-wedding-desktop.webp">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/type-wedding-tablet.webp">
+                  <source type="image/webp" srcset="img/type-wedding-mobile.webp"> -->
+
+              <source media="(min-width: 1366px)" srcset="img/type-wedding-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/type-wedding-tablet.jpg">
+              <img class="assortment__image" src="img/type-wedding-mobile.jpg" alt="Свадебный торт">
+            </picture>
+          </a>
+        </li>
+      </ul>
+      <ul class="assortment__list assortment__list--first-group">
+        <li class="assortment__item">
+          <a class="assortment__link">
+            <h3 class="assortment__title">Детские</h3>
+            <span class="assortment__count">18 видов</span>
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 1366px)"
+                        srcset="img/type-kids-desktop.webp">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/type-kids-tablet.webp">
+                      <source type="image/webp" srcset="img/type-kids-mobile.webp"> -->
+
+              <source media="(min-width: 1366px)" srcset="img/type-kids-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/type-kids-tablet.jpg">
+              <img class="assortment__image" src="img/type-kids-mobile.jpg" alt="Торт для детей">
+            </picture>
+          </a>
+        </li>
+        <li class="assortment__item">
+          <a class="assortment__link">
+            <h3 class="assortment__title">Мужчинам</h3>
+            <span class="assortment__count">12 видов</span>
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 1366px)"
+                  srcset="img/type-man-desktop.webp">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/type-man-tablet.webp">
+                <source type="image/webp" srcset="img/type-man-mobile.webp"> -->
+
+              <source media="(min-width: 1366px)" srcset="img/type-man-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/type-man-tablet.jpg">
+              <img class="assortment__image" src="img/type-man-mobile.jpg" alt="Торт для мужчин">
+            </picture>
+          </a>
+        </li>
+        <li class="assortment__item">
+          <a class="assortment__link">
+            <h3 class="assortment__title">Женщинам</h3>
+            <span class="assortment__count">16 видов</span>
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 1366px)"
+                      srcset="img/type-women-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/type-women-tablet.webp">
+                    <source type="image/webp" srcset="img/type-women-mobile.webp"> -->
+
+              <source media="(min-width: 1366px)" srcset="img/type-women-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/type-women-tablet.jpg">
+              <img class="assortment__image" src="img/type-women-mobile.jpg" alt="Торт для женщин">
+            </picture>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="order">
+      <h2 class="section-title">Индивидуальный заказ</h2>
+      <span class="order__footnote">Соберите торт в 3 шага</span>
+      <section class="order__first-step">
+        <div class="order-slider type-slider">
+          <h3 class="order__title">01 Выберите начинку</h3>
+          <div class="type-slide">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 1366px)"
+                        srcset="img/order-type-choco-desktop.webp">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/order-type-choco-tablet.webp">
+                      <source type="image/webp" srcset="img/order-type-choco-mobile.webp"> -->
+
+              <source media="(min-width: 1366px)" srcset="img/order-type-choco-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/order-type-choco-tablet.jpg">
+              <img class="order__image" src="img/order-type-choco-mobile.jpg" alt="Начинка торта">
+            </picture>
+            <h4 class="type-slide__cake-name">Шоколадный ганаш</h4>
+            <p class="type-slide__cake-description">Ароматный шоколадный бисквит, густой шоколадный крем – самый
+              шоколадный из всех возможных десертов!</p>
+            <span class="type-slide__price">1000 руб/кг</span>
+            <button class="button" type="button">Выбрать </button>
+          </div>
+          <div class="slider-controls">
+          </div>
+        </div>
+      </section>
+      <section class="order__second-step">
+        <div class="size-slider">
+          <h3 class="order__title">02 Размер</h3>
+          <ul class="size-slider__list">
+            <li class="size-slider__item">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1366px)"
+                              srcset="img/size-mobile-1.webp">
+                            <source type="image/webp" media="(min-width: 768px)"
+                              srcset="img/size-tablet-1.webp">
+                            <source type="image/webp" srcset="img/size-mobile-1.webp"> -->
+
+                <source media="(min-width: 1366px)" srcset="img/size-mobile-1.png">
+                <source media="(min-width: 768px)" srcset="img/size-tablet-1.png">
+                <img class="order__image" src="img/size-mobile-1.png" alt="Размер торта">
+              </picture>
+              <p class="order__size">17-18 см<span class="order__size-footnote">(1 кг – 6 персон)</span></p>
+            </li>
+            <li class="size-slider__item">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1366px)"
+                                  srcset="img/size-desktop-2.webp">
+                                <source type="image/webp" srcset="img/size-tablet-2.webp"> -->
+
+                <source media="(min-width: 1366px)" srcset="img/size-desktop-2.png">
+                <img class="order__image" src="img/size-tablet-2.png" alt="Размер торта">
+              </picture>
+              <p class="order__size">23-124 см<span class="order__size-footnote">(10 кг – 12 персон)</span>
+              </p>
+            </li>
+            <li class="size-slider__item">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1366px)"
+                                    srcset="img/size-desktop-3.webp">
+                                  <source type="image/webp" srcset="img/size-tablet-3.webp"> -->
+
+                <source media="(min-width: 1366px)" srcset="img/size-desktop-3.png">
+                <img class="order__image" src="img/size-tablet-3.png" alt="Размер торта">
+              </picture>
+              <p class="order__size">Два яруса 25 и 20 см <span class="order__size-footnote">(15–20 персон)</span>
+              </p>
+            </li>
+            <li class="size-slider__item">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1366px)"
+                                    srcset="img/size-desktop-4.webp">
+                                  <source type="image/webp" srcset="img/size-tablet-4.webp"> -->
+
+                <source media="(min-width: 1366px)" srcset="img/size-desktop-4.png">
+                <img class="order__image" src="img/size-tablet-4.png" alt="Размер торта">
+              </picture>
+              <p class="order__size">Три яруса 30,25 и 18 см<span class="order__size-footnote">(25–30 персон)</span>
+              </p>
+            </li>
+          </ul>
+          <button class="button" type="button">Выбрать </button>
+          <div class="slider-controls">
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
 </body>
 
 </html>
