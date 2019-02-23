@@ -90,6 +90,13 @@ gulp.task('images', () => gulp.src('source/img/original/*.{png,jpg,svg}')
   .pipe(gulp.dest('source/img')));
 
 gulp.task('sprite', () => gulp.src('source/img/sprite/*.svg')
+  .pipe(imagemin([
+    imagemin.svgo({
+      plugins: [
+        { removeViewBox: false },
+      ],
+    }),
+  ]))
   .pipe(svgstore({
     inlineSvg: true,
   }))
