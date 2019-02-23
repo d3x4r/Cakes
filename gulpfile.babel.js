@@ -67,6 +67,7 @@ gulp.task('clean', () => del('build'));
 
 gulp.task('copy', () => gulp.src([
   'source/fonts/**/*.{woff,woff2}',
+  'source/pixelglass/**/*',
   'source/img/*',
   'source/js/lib/*',
   'source/pixelglass/**/*',
