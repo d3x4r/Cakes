@@ -109,6 +109,7 @@ gulp.task('webp', () => gulp.src('source/img/original/*.jpg')
   .pipe(gulp.dest('source/img')));
 
 gulp.task('js', () => gulp.src('source/js/main.js')
+  .pipe(plumber())
   .pipe(sourcemaps.init())
   .pipe(rollup({
     plugins: [babel()],

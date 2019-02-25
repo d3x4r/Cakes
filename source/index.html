@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="pixelglass/image.css">
   <link rel="stylesheet" href="pixelglass/styles.css">
   <!-- ****PIXEL GLASS**** END -->
+  <!-- <link rel="stylesheet" href="pixelglass/hamburgers.min.css"> -->
   <link rel="stylesheet" href="css/style.css?rev=@@hash">
 </head>
 
@@ -20,13 +21,18 @@
   <header class="header">
     <div class="header-top-container">
       <div class="logo">
-        <svg width="68" height="18" fill="#000000">
+        <svg class="logo__svg" width="68" height="18" fill="#000000">
           <use xlink:href="#logo-mobile"></use>
         </svg>
       </div>
       <nav class="main-nav">
+        <button class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--first">
             <a class="main-nav__link" href="#">Наши торты</a>
           </li>
           <li class="main-nav__item">
@@ -45,18 +51,18 @@
             <a class="main-nav__link" href="#">Контакты</a>
           </li>
         </ul>
-        <button class="main-nav__toggle" type="button" aria-label="Показать или спрятать навигацию по сайту"></button>
       </nav>
       <p class="phone-number">+7 906 899 92 96</p>
     </div>
     <div class="page-preview">
       <h1 class="page-preview__title page-title">Торты на заказ</h1>
-      <span class="page-preview__advantage">Ручная работа</span>
+      <span class="page-preview__advantage text-addition">Ручная работа</span>
       <ul class="page-preview__advantages-list">
-        <li class="page-preview__advantages-item">Натуральные ингредиенты</li>
-        <li class="page-preview__advantages-item">Доставка бесплатно при заказе от 2000 рублей*</li>
+        <li class="page-preview__advantages-item page-preview__advantages-item--ingredient">Натуральные ингредиенты</li>
+        <li class="page-preview__advantages-item page-preview__advantages-item--delivery">Доставка бесплатно при заказе
+          от 2000 рублей*</li>
       </ul>
-      <a class="page-preview__order-button" href="#">Выбрать торт</a>
+      <a class="page-preview__order-button button" href="#">Выбрать торт</a>
     </div>
   </header>
   <script src="js/main.js"></script>

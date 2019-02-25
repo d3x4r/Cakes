@@ -1,0 +1,29 @@
+.button {
+  box-sizing: border-box;
+  display: block;
+  width: 226px;
+
+  margin: 0 auto;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  font-size: 13px;
+  line-height: 27px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #f50049;
+  border-radius: 50px;
+
+  &:hover {
+    box-shadow: 0 5px 7.04px 0.96px rgba(255, 0, 67, 0.3);
+  }
+
+  &:active {
+    opacity: 0.8;
+    transform: scale(0.98);
+  }
+}
+
