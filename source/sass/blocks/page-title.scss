@@ -15,3 +15,30 @@
   color: #2d2829;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    width: 290px;
+
+    margin: 0;
+    margin-left: calc(50% - 339px);
+    padding-top: 102px;
+
+    font-size: 60px;
+    line-height: 55px;
+    letter-spacing: 4.5px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    width: 372px;
+
+    margin-left: calc(50% - 613px);
+    padding-top: 136px;
+    font-size: 80px;
+    line-height: 70px;
+    letter-spacing: 5px;
+  }
+}

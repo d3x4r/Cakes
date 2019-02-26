@@ -1,3 +1,22 @@
 .phone-number {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .phone-number {
+    display: block;
+
+    margin: 0;
+    margin-top: 2px;
+    margin-left: auto;
+
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .phone-number {
+    margin-top: 9px;
+  }
+}
