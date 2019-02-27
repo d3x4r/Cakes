@@ -1,0 +1,9 @@
+.header {
+  margin-bottom: 42px;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    margin-bottom: 117px;
+  }
+}

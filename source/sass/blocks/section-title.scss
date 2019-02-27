@@ -1,0 +1,17 @@
+.section-title {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.24px;
+  color: #2d2829;
+}
+
+@media (min-width: $tablet-width) {
+  .section-title {
+    font-size: 28px;
+  }
+}

@@ -22,10 +22,10 @@
     <div class="header-top-container">
       <div class="logo">
         <a class="logo__link" href="#">
-        <svg class="logo__svg" width="68" height="18" fill="#000000">
-          <use xlink:href="#logo-mobile"></use>
-        </svg>
-      </a>
+          <svg class="logo__svg" width="68" height="18" fill="#000000">
+            <use xlink:href="#logo-mobile"></use>
+          </svg>
+        </a>
       </div>
       <nav class="main-nav">
         <button class="hamburger hamburger--collapse" type="button">
@@ -61,7 +61,8 @@
       <span class="page-preview__advantage text-addition">Ручная работа</span>
       <ul class="page-preview__advantages-list">
         <li class="page-preview__advantages-item page-preview__advantages-item--ingredient">Натуральные ингредиенты</li>
-        <li class="page-preview__advantages-item page-preview__advantages-item--delivery">Доставка бесплатно при&nbsp;заказе
+        <li class="page-preview__advantages-item page-preview__advantages-item--delivery">Доставка бесплатно
+          при&nbsp;заказе
           от 2000 рублей*</li>
       </ul>
       <a class="page-preview__order-button button" href="#">Выбрать торт</a>
@@ -69,12 +70,14 @@
   </header>
   <main>
     <section class="assortment">
-      <h2 class="section-title">Наши торты</h2>
+      <h2 class="section-title assortment__main-title">Наши торты</h2>
       <ul class="assortment__list assortment__list--first-group">
-        <li class="assortment__item">
-          <a class="assortment__link">
-            <h3 class="assortment__title">Классические</h3>
-            <span class="assortment__count">24 вида</span>
+        <li class="assortment__item assortment__item--big">
+          <a class="assortment__link" href="#">
+            <div class="assortment__link-container assortment__link-container--big">
+              <h3 class="assortment__title">Классические</h3>
+              <span class="assortment__count">24 вида</span>
+            </div>
             <picture>
               <!-- <source type="image/webp" media="(min-width: 1220px)"
                 srcset="img/type-classic-desktop.webp">
@@ -84,14 +87,16 @@
 
               <source media="(min-width: 1220px)" srcset="img/type-classic-desktop.jpg">
               <source media="(min-width: 768px)" srcset="img/type-classic-tablet.jpg">
-              <img class="assor" src="img/type-classic-mobile.jpg" alt="Классический торт">
+              <img class="assortment__image" src="img/type-classic-mobile.jpg" alt="Классический торт">
             </picture>
           </a>
         </li>
-        <li class="assortment__item">
-          <a class="assortment__link">
-            <h3 class="assortment__title">Муссовые</h3>
-            <span class="assortment__count">12 видов</span>
+        <li class="assortment__item assortment__item">
+          <a class="assortment__link" href="#">
+            <div class="assortment__link-container">
+              <h3 class="assortment__title">Муссовые</h3>
+              <span class="assortment__count">12 видов</span>
+            </div>
             <picture>
               <!-- <source type="image/webp" media="(min-width: 1220px)"
                   srcset="img/type-mousse-desktop.webp">
@@ -106,9 +111,11 @@
           </a>
         </li>
         <li class="assortment__item">
-          <a class="assortment__link">
-            <h3 class="assortment__title">Свадебные</h3>
-            <span class="assortment__count">20 видов</span>
+          <a class="assortment__link" href="#">
+            <div class="assortment__link-container">
+              <h3 class="assortment__title">Свадебные</h3>
+              <span class="assortment__count">20 видов</span>
+            </div>
             <picture>
               <!-- <source type="image/webp" media="(min-width: 1220px)"
                     srcset="img/type-wedding-desktop.webp">
@@ -123,28 +130,13 @@
           </a>
         </li>
       </ul>
-      <ul class="assortment__list assortment__list--first-group">
+      <ul class="assortment__list assortment__list--second-group">
         <li class="assortment__item">
-          <a class="assortment__link">
-            <h3 class="assortment__title">Детские</h3>
-            <span class="assortment__count">18 видов</span>
-            <picture>
-              <!-- <source type="image/webp" media="(min-width: 1220px)"
-                        srcset="img/type-kids-desktop.webp">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="img/type-kids-tablet.webp">
-                      <source type="image/webp" srcset="img/type-kids-mobile.webp"> -->
-
-              <source media="(min-width: 1220px)" srcset="img/type-kids-desktop.jpg">
-              <source media="(min-width: 768px)" srcset="img/type-kids-tablet.jpg">
-              <img class="assortment__image" src="img/type-kids-mobile.jpg" alt="Торт для детей">
-            </picture>
-          </a>
-        </li>
-        <li class="assortment__item">
-          <a class="assortment__link">
-            <h3 class="assortment__title">Мужчинам</h3>
-            <span class="assortment__count">12 видов</span>
+          <a class="assortment__link" href="#">
+            <div class="assortment__link-container">
+              <h3 class="assortment__title">Мужчинам</h3>
+              <span class="assortment__count">12 видов</span>
+            </div>
             <picture>
               <!-- <source type="image/webp" media="(min-width: 1220px)"
                   srcset="img/type-man-desktop.webp">
@@ -158,10 +150,12 @@
             </picture>
           </a>
         </li>
-        <li class="assortment__item">
-          <a class="assortment__link">
-            <h3 class="assortment__title">Женщинам</h3>
-            <span class="assortment__count">16 видов</span>
+        <li class="assortment__item assortment__item">
+          <a class="assortment__link" href="#">
+            <div class="assortment__link-container">
+              <h3 class="assortment__title">Женщинам</h3>
+              <span class="assortment__count">16 видов</span>
+            </div>
             <picture>
               <!-- <source type="image/webp" media="(min-width: 1220px)"
                       srcset="img/type-women-desktop.webp">
@@ -172,6 +166,25 @@
               <source media="(min-width: 1220px)" srcset="img/type-women-desktop.jpg">
               <source media="(min-width: 768px)" srcset="img/type-women-tablet.jpg">
               <img class="assortment__image" src="img/type-women-mobile.jpg" alt="Торт для женщин">
+            </picture>
+          </a>
+        </li>
+        <li class="assortment__item assortment__item--kids assortment__item--big">
+          <a class="assortment__link" href="#">
+            <div class="assortment__link-container assortment__link-container--big">
+              <h3 class="assortment__title">Детские</h3>
+              <span class="assortment__count">18 видов</span>
+            </div>
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 1220px)"
+                          srcset="img/type-kids-desktop.webp">
+                        <source type="image/webp" media="(min-width: 768px)"
+                          srcset="img/type-kids-tablet.webp">
+                        <source type="image/webp" srcset="img/type-kids-mobile.webp"> -->
+
+              <source media="(min-width: 1220px)" srcset="img/type-kids-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/type-kids-tablet.jpg">
+              <img class="assortment__image" src="img/type-kids-mobile.jpg" alt="Торт для детей">
             </picture>
           </a>
         </li>
