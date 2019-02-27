@@ -15,3 +15,9 @@
     font-size: 28px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .section-title {
+    font-size: 40px;
+  }
+}

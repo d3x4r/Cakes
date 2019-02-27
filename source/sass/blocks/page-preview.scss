@@ -53,9 +53,9 @@
     display: flex;
     flex-direction: column;
 
-    background-image: url("../img/header-background-tablet.png");
+    background-image: url("../img/header-background-tablet-2.png"), url("../img/header-background-tablet.png");
     background-repeat: no-repeat;
-    background-position: calc(50% + 235px) 13px;
+    background-position: calc(50% - 51px) 31px, calc(50% + 235px) 13px;
   }
 
   .page-preview__advantage {
@@ -119,9 +119,9 @@
   .page-preview {
     padding-bottom: 280px;
 
-    background-image: url("../img/header-background-desktop.png");
+    background-image: url("../img/header-background-desktop-2.png"), url("../img/header-background-desktop.png");
     background-repeat: no-repeat;
-    background-position: calc(51% + 381px) 8px;
+    background-position: calc(51% - 177px) 29px, calc(51% + 381px) 8px;
   }
 
   .page-preview__advantage {

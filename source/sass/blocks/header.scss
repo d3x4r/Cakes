@@ -7,3 +7,9 @@
     margin-bottom: 117px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .header {
+    margin-bottom: -53px;
+  }
+}
