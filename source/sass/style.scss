@@ -1,5 +1,7 @@
 @import "normalize",
   "blocks/hamburgers-settings.scss",
+  "../../node_modules/slick-carousel/slick/slick.scss",
+  "../../node_modules/slick-carousel/slick/slick-theme.scss",
   "fonts",
   "variables",
   "base",
@@ -14,4 +16,9 @@
   "blocks/page-preview",
   "blocks/section-title",
   "blocks/header",
-  "blocks/assortment"
+  "blocks/assortment",
+  "blocks/footnote",
+  "blocks/order",
+  "blocks/type-slide",
+  "blocks/slick-settings",
+  "blocks/type-slider"

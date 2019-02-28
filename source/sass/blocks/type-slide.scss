@@ -1,0 +1,80 @@
+.type-slide {
+  padding-bottom: 26px;
+}
+
+.type-slide__image {
+  display: block;
+  width: 241px;
+  height: 113px;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 38px;
+}
+
+.type-slide__cake-name {
+  width: 140px;
+
+  margin: 0;
+  margin-left: calc(50% - 121px);
+  margin-bottom: 5px;
+
+  font-size: 14px;
+  color: #2f2f2f;
+}
+
+.type-slide__cake-description {
+  width: 242px;
+
+  margin: 0 auto;
+  margin-bottom: 13px;
+
+  color: #2f2f2f;
+}
+
+.type-slide__price {
+  display: block;
+
+  width: 105px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
+
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 700;
+  letter-spacing: 0.16px;
+  color: #2f2f2f;
+}
+
+@media (min-width: $tablet-width) {
+  .type-slide__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .type-slide__cake-name {
+    margin: 0;
+  }
+
+  .type-slide__cake-description {
+    width: 217px;
+    margin: 0;
+  }
+
+  .type-slide__price {
+    margin: 0;
+  }
+
+  .order__button {
+    margin: 0;
+  }
+
+  .type-slide__image {
+    width: 210px;
+    height: 239px;
+
+    margin: 0;
+  }
+}

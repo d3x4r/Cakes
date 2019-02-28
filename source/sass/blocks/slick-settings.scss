@@ -1,0 +1,29 @@
+.slick-dots {
+  bottom: 237px;
+}
+
+.slick-dots li {
+  margin: 0;
+}
+
+.slick-dots li button {
+  padding: 0;
+}
+
+.slick-dots li button::before {
+  font-size: 27px;
+}
+
+.slick-dots li.slick-active button::before {
+  color: rgba(245, 0, 73, 0.9);
+}
+
+.slick-dots li button:focus::before,
+.slick-dots li button:hover::before {
+
+  color: rgba(245, 0, 73, 0.25);
+}
+
+.slick-dots li.slick-active button:hover::before {
+  color: rgba(245, 0, 73, 0.8);
+}

@@ -1,0 +1,18 @@
+.footnote {
+  display: block;
+  width: 225px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  font-family: "Leokadia Deco", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .footnote {
+    font-size: 23px;
+  }
+}

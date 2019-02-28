@@ -3,6 +3,7 @@
 
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 45px;
 }
 
 .assortment__main-title {
@@ -70,6 +71,7 @@
 @media (min-width: $tablet-width) {
   .assortment {
     width: 94.7%;
+    margin-bottom: 37px;
   }
 
   .assortment__main-title {
