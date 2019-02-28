@@ -16,3 +16,9 @@
     font-size: 23px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footnote {
+    font-size: 31px;
+  }
+}

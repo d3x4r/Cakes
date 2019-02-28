@@ -7,12 +7,12 @@ export default () => {
       {
         breakpoint: 767,
         settings: {
-          // slidesToShow: 3,
-          // slidesToScroll: 3,
-          // infinite: true,
-          dots: false
-        }
-      }
-    ]
+          arrows: true,
+          prevArrow: $('.slider-controls__item--prev'),
+          nextArrow: $('.slider-controls__item--next'),
+          dots: false,
+        },
+      },
+    ],
   });
 };

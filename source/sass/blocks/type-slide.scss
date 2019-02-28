@@ -52,23 +52,45 @@
   .type-slide__container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-left: 6.9%;
+    margin-top: 53px;
+
+    cursor: pointer;
+  }
+
+  .type-slide__text-container {
+    margin-top: 22px;
   }
 
   .type-slide__cake-name {
+    width: 190px;
     margin: 0;
+    margin-bottom: 5px;
+
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.18px;
   }
 
   .type-slide__cake-description {
     width: 217px;
+
     margin: 0;
+    margin-bottom: 6px;
+
+    font-size: 14px;
   }
 
   .type-slide__price {
+    width: 130px;
     margin: 0;
-  }
+    margin-bottom: 27px;
 
-  .order__button {
-    margin: 0;
+    font-size: 20px;
+    line-height: 23px;
   }
 
   .type-slide__image {
@@ -76,5 +98,41 @@
     height: 239px;
 
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .type-slide__image {
+    width: 344px;
+    height: 390px;
+  }
+
+  .type-slide__container {
+    margin-top: 88px;
+    margin-left: 57px;
+  }
+
+  .type-slide__cake-name {
+    font-size: 19px;
+    line-height: 23px;
+  }
+
+  .type-slide__cake-description {
+    width: 288px;
+
+    margin-bottom: 16px;
+
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .type-slide__text-container {
+    margin-top: 67px;
+  }
+
+  .type-slide__price {
+    margin-bottom: 53px;
+
+    font-size: 22px;
   }
 }
