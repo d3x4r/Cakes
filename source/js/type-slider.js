@@ -8,8 +8,8 @@ export default () => {
         breakpoint: 767,
         settings: {
           arrows: true,
-          prevArrow: $('.slider-controls__item--prev'),
-          nextArrow: $('.slider-controls__item--next'),
+          prevArrow: $('.order__type-item--prev'),
+          nextArrow: $('.order__type-item--next'),
           dots: false,
         },
       },

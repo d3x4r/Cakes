@@ -42,10 +42,10 @@
     box-shadow: 0 6px 9.7px 0.3px rgba(0, 0, 0, 0.14);
   }
 
-  // .visualization-slide {
-  //   padding: 12.5px;
-  // }
-
+  .visualization-slide {
+    padding-bottom: 0;
+    box-shadow: 0 7px 12.74px 0.26px rgba(0, 0, 0, 0.05);
+  }
 
   .visualization-slide__button {
     display: none;
@@ -57,6 +57,8 @@
 
   .visualization-slide__image {
     margin: 0;
+    margin-right: auto;
+    margin-left: auto;
 
     width: 196px;
     height: 194px;
@@ -65,18 +67,70 @@
   }
 
   .visualization-slider {
-    width: 392px;
-    // width: 417px;
-    // width: 600px;
+    width: 62%;
 
     margin-top: 39px;
     margin-left: auto;
     margin-right: auto;
+
+    cursor: pointer;
   }
 
   .visualization-slide__price {
+    margin-bottom: 18px;
+
     font-size: 14px;
     line-height: 14px;
     text-align: center;
+  }
+
+  .visualization-slide__controls {
+    position: absolute;
+    top: 50%;
+
+    z-index: 10000;
+  }
+
+  .slider-controls__button-prev {
+    left: -50px;
+    transform: rotate(180deg);
+
+    &:active {
+      transform: rotate(180deg);
+    }
+  }
+
+  .slider-controls__button-next {
+    right: -50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .visualization-slider {
+    width: 759px;
+  }
+
+  .visualization-slide__image {
+    width: 321px;
+    height: 320px;
+
+    margin: 0;
+    margin-bottom: 52px;
+  }
+
+  .visualization-slide__cake-name {
+    font-size: 18px;
+    line-height: 30px;
+
+    margin-bottom: 0;
+  }
+
+  .visualization-slide__price {
+    width: 130px;
+
+    margin-bottom: 24px;
+
+    font-size: 19px;
+    line-height: 30px;
   }
 }
