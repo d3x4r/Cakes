@@ -27,3 +27,15 @@
 .slick-dots li.slick-active button:hover::before {
   color: rgba(245, 0, 73, 0.8);
 }
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.size-slider__list .slick-dots {
+  bottom: 167px;
+}
+
+.visualization-slider .slick-dots {
+  bottom: 173px;
+}

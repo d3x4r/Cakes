@@ -3,8 +3,12 @@ import $ from '../../node_modules/jquery/dist/jquery';
 import '../../node_modules/slick-carousel/slick/slick';
 /* eslint-enable */
 
-import menu from './menu';
-import slide from './type-slider';
+import addMenu from './menu';
+import addTypeSlider from './type-slider';
+import addSizeSlider from './size-slider';
+import addVisualSlider from './visualization-slider';
 
-menu();
-slide();
+addMenu();
+addTypeSlider();
+addSizeSlider();
+addVisualSlider();

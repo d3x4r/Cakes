@@ -14,7 +14,13 @@
   text-align: center;
 }
 
-.order__first-step {
+.order__first-step,
+.order__second-step {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.order__third-step {
   background-color: #ffffff;
 }
 
@@ -47,7 +53,7 @@
 
 .order__button {
   border: none;
-  width: 178px;
+  width: 64%;
 }
 
 .order__type-controls {
@@ -64,7 +70,18 @@
     display: flex;
     align-items: flex-start;
 
+    margin-bottom: 21px;
     padding-bottom: 30px;
+  }
+
+  .order__second-step {
+    margin-bottom: 21px;
+  }
+
+  .order__third-step {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .order__title {
@@ -141,6 +158,11 @@
 
   .order__first-step {
     padding-bottom: 67px;
+    margin-bottom: 35px;
+  }
+
+  .order__second-step {
+    padding-bottom: 71px;
   }
 
   .order__main-title {
