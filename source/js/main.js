@@ -7,8 +7,10 @@ import addMenu from './menu';
 import addTypeSlider from './type-slider';
 import addSizeSlider from './size-slider';
 import addVisualSlider from './visualization-slider';
+import addOrder from './order';
 
 addMenu();
 addTypeSlider();
 addSizeSlider();
 addVisualSlider();
+addOrder();
