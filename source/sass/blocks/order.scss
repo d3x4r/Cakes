@@ -84,7 +84,7 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    padding-bottom: 50px;
+    padding-bottom: 9px;
 
     background-image: url("../img/order-step3-tablet.png");
     background-repeat: no-repeat;
@@ -181,6 +181,8 @@
   }
 
   .order__third-step {
+    padding-bottom: 34px;
+
     background-image: url("../img/order-step3-desktop.png");
     background-repeat: no-repeat;
     background-position: 2% calc(50% + 79px);
