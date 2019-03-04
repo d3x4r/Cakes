@@ -1,3 +1,11 @@
+let pageWidth = $('html').width();
+
+const Width = {
+  mobile: 320,
+  tablet: 768,
+  desktop: 1220,
+};
+
 const typeSlider = $('.type-slider');
 const designSlider = $('.visualization-slider');
 const sizeSlider = $('.size-slider__list');
@@ -10,6 +18,8 @@ const designSliderValue = '.visualization-slide__cake-name';
 
 const sizeSliderContainer = '.order__second-step';
 const sizeSliderValue = '.size-slider__size-footnote';
+
+const sizeList = $('.size-slider__list');
 
 const getSelectedSlide = sliderClass => $(`${sliderClass} .slick-current`);
 const getSlideValueContainer = (slide, className) => slide.find(`${className}`);
@@ -37,16 +47,34 @@ const updateType = () => updateOrder(typeSliderContainer, typeSliderValue, Order
 const updateDesign = () => updateOrder(designSliderContainer, designSliderValue, OrderPart.design);
 const updateSize = () => updateOrder(sizeSliderContainer, sizeSliderValue, OrderPart.size);
 
-const sizeList = $('.size-slider__list');
-
-function fn() {
-  // sizeList.find('.slick-current').removeClass('slick-current');
+function changeSizeByClick() {
+  sizeList.find('.slick-current').removeClass('slick-current');
   $(this).addClass('slick-current');
+  updateSize();
 }
 
-export default () => {
+const addSizeSliderByWidth = () => {
+  pageWidth = $('html').width();
+  if (pageWidth < Width.tablet) {
+    sizeSlider.on('afterChange', updateSize);
+  } else {
+    sizeList.on('click', 'li', changeSizeByClick);
+  }
+};
+
+const addOrderMenu = () => {
   typeSlider.on('afterChange', updateType);
   designSlider.on('afterChange', updateDesign);
-  sizeSlider.on('afterChange', updateSize);
-  sizeList.on('click', 'li', fn);
+  addSizeSliderByWidth();
+};
+
+const updateSizeSlider = () => {
+  sizeSlider.off('afterChange', updateSize);
+  sizeList.off('click', 'li', changeSizeByClick);
+  addSizeSliderByWidth();
+};
+
+export default () => {
+  $(window).on('resize', updateSizeSlider);
+  addOrderMenu();
 };

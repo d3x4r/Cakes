@@ -39,3 +39,39 @@
 .visualization-slider .slick-dots {
   bottom: 173px;
 }
+
+@media (min-width: 768px) {
+  .size-slider .slick-current .size-slider__image {
+    box-shadow: 0 0 0 10px #f50049;
+    border-radius: 50%;
+  }
+
+  .visualization-slider .slick-current .visualization-slide::before {
+    position: absolute;
+    content: "";
+    display: block;
+
+    width: 30px;
+    height: 30px;
+
+    right: 15px;
+    top: 15px;
+
+    opacity: 1;
+
+    background-image: url("data:image/svg+xml,%3Csvg data-name='Слой 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath d='M15 2A13 13 0 1 1 2 15 13 13 0 0 1 15 2m0-2a15 15 0 1 0 15 15A15 15 0 0 0 15 0z' fill='%23f50049'/%3E%3Cpath fill='none' stroke='%23f50049' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M21.5 6.5l-7 17M7.5 14.5l7 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1220px) {
+  .visualization-slider .slick-current .visualization-slide::before {
+
+
+    width: 40px;
+    height: 40px;
+
+    right: 20px;
+    top: 20px;
+  }
+}
