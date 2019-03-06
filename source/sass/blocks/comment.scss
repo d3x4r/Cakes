@@ -74,6 +74,10 @@
   cursor: pointer;
 }
 
+.comment__counter {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .comment {
     padding-top: 36px;
@@ -182,6 +186,10 @@
     background-position: calc(50% - 410px) -2px, calc(50% + 410px) - 2px;
   }
 
+  .comment__wrapper {
+    position: relative;
+  }
+
   .comment__title {
     width: 250px;
 
@@ -198,6 +206,7 @@
   }
 
   .comment__about-author {
+    width: 250px;
     margin-bottom: 20px;
 
     font-size: 19px;
@@ -240,5 +249,22 @@
     &--next {
       right: -108px;
     }
+  }
+
+  .comment__counter {
+    position: absolute;
+    display: flex;
+
+    right: 240px;
+    bottom: 14px;
+
+    font-size: 18px;
+    line-height: 21px;
+    color: #f50049;
+  }
+
+  .comment__current-index,
+  .comment__count {
+    margin: 0;
   }
 }

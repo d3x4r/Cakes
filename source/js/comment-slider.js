@@ -1,6 +1,12 @@
+const commentSlider = $('.comment__slider');
 
-export default () => {
-  $('.comment__slider').slick({
+const sliderCounter = $('.comment__current-index');
+const slides = $('.comment__slide');
+const slidesQuantity = slides.length;
+const slidesQuantityContainer = $('.comment__count');
+
+const addCommentSlider = () => {
+  commentSlider.slick({
     dots: true,
     arrows: false,
     mobileFirst: true,
@@ -16,4 +22,24 @@ export default () => {
       },
     ],
   });
+};
+
+const countUpdate = () => {
+  const activeSlide = $('.comment .slick-current');
+  const activeIndex = activeSlide.index();
+  sliderCounter.text(activeIndex);
+  slidesQuantityContainer.text(slidesQuantity);
+};
+
+const addCountUpdate = () => {
+  $(document).ready(() => {
+    countUpdate();
+  });
+
+  commentSlider.on('afterChange', countUpdate);
+};
+
+export default () => {
+  addCommentSlider();
+  addCountUpdate();
 };

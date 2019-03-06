@@ -1,6 +1,7 @@
 env:
   es6: true,
   jquery: true
+  browser: true,
 extends: airbnb-base
 globals:
   window: true

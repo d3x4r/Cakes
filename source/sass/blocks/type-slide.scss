@@ -53,16 +53,32 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
+    // align-items: flex-start;
 
     margin-left: 6.9%;
     margin-top: 53px;
 
     cursor: pointer;
+    user-select: none;
   }
 
   .type-slide__text-container {
+    display: flex;
+    flex-direction: column;
+
     margin-top: 22px;
+    padding-bottom: 25px;
+  }
+
+  .type-slide__price {
+    width: 130px;
+
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: 27px;
+
+    font-size: 20px;
+    line-height: 23px;
   }
 
   .type-slide__cake-name {
@@ -82,15 +98,6 @@
     margin-bottom: 6px;
 
     font-size: 14px;
-  }
-
-  .type-slide__price {
-    width: 130px;
-    margin: 0;
-    margin-bottom: 27px;
-
-    font-size: 20px;
-    line-height: 23px;
   }
 
   .type-slide__image {
@@ -131,6 +138,7 @@
   }
 
   .type-slide__price {
+    width: 200px;
     margin-bottom: 53px;
 
     font-size: 22px;
