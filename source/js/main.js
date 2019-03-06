@@ -8,9 +8,11 @@ import addTypeSlider from './type-slider';
 import addSizeSlider from './size-slider';
 import addVisualSlider from './visualization-slider';
 import addOrder from './order';
+import addCommentSlider from './comment-slider';
 
 addMenu();
 addTypeSlider();
 addSizeSlider();
 addVisualSlider();
 addOrder();
+addCommentSlider();

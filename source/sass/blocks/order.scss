@@ -65,6 +65,11 @@
     width: 94.7%;
   }
 
+  .order__first-step,
+  .order__second-step {
+    box-shadow: 0 5px 12.74px 0.26px rgba(163, 6, 60, 0.1);
+  }
+
   .order__first-step {
     position: relative;
     display: flex;
@@ -89,6 +94,8 @@
     background-image: url("../img/order-step3-tablet.png");
     background-repeat: no-repeat;
     background-position: 1% calc(50% + 11px);
+
+    box-shadow: 0 -5.26px 14px 0.26px rgba(163, 6, 60, 0.1);
   }
 
   .order__third-step .slick-slide {

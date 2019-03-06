@@ -1,4 +1,4 @@
-const documentWidth = $('html').width();
+// const documentWidth = $('html').width();
 const menuButton = $('.hamburger');
 
 const classToggle = () => {

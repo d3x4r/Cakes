@@ -81,6 +81,8 @@ const updateSizeSlider = () => {
 };
 
 export default () => {
+  updateType();
+  updateDesign();
   $(window).on('resize', updateSizeSlider);
   addOrderMenu();
 };

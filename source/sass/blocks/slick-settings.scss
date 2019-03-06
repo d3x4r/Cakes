@@ -40,6 +40,10 @@
   bottom: 173px;
 }
 
+.comment__slider .slick-dots {
+  bottom: 0;
+}
+
 @media (min-width: 768px) {
   .size-slider .slick-current .size-slider__image {
     box-shadow: 0 0 0 10px #f50049;
