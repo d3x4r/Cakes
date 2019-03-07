@@ -1,0 +1,83 @@
+.about-us {
+  width: 87%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-us__twitter-svg,
+.about-us__vk {
+  stroke: #f50049;
+}
+
+.about-us__title {
+  width: 150px;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 19px;
+
+  text-align: center;
+}
+
+.about-us__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 227px;
+
+  margin-left: calc(50% - 139px);
+}
+
+
+.about-us__image {
+  display: block;
+
+  width: 156px;
+  height: 155px;
+}
+
+.about-us__social {
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.about-us__social-link {
+  position: relative;
+  display: block;
+
+  width: 36px;
+  height: 36px;
+
+  margin-bottom: 15px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  &:hover {
+    box-shadow: 0 2px 7.04px 0.96px rgba(255, 0, 67, 0.2);
+  }
+
+  &:active {
+    opacity: 0.7;
+    transform: scale(0.95);
+  }
+}
+
+.about-us__icon {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  font-size: 0;
+  line-height: 0;
+
+  z-index: 10000;
+}

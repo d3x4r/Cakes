@@ -44,6 +44,14 @@
   bottom: 0;
 }
 
+$slick-font-family: none;
+
+.slick-list {
+  .slick-loading & {
+    background: none;
+  }
+}
+
 @media (min-width: 768px) {
   .size-slider .slick-current .size-slider__image {
     box-shadow: 0 0 0 10px #f50049;
