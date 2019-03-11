@@ -84,6 +84,7 @@
 
 @media (min-width: $tablet-width) {
   .comment {
+    margin-bottom: 110px;
     padding-top: 36px;
 
     background-image: url("../img/comment-left-tablet.png"), url("../img/comment-right-tablet.png");
@@ -184,6 +185,7 @@
 
 @media (min-width: $desktop-width) {
   .comment {
+    margin-bottom: 179px;
     padding-top: 109px;
 
     background-image: url("../img/comment-left-desktop.png"), url("../img/comment-right-desktop.png");

@@ -1,0 +1,72 @@
+.about-chef {
+  margin-bottom: 70px;
+}
+
+.about-chef__title {
+  margin: 0;
+  margin-bottom: 4px;
+
+  font-family: "Leokadia Deco", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.about-chef__text {
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.about-chef__subtitle {
+  margin: 0;
+  margin-bottom: 7px;
+
+  font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .about-chef {
+    order: 2;
+
+    width: 50%;
+
+    margin-bottom: 10px;
+  }
+
+  .about-chef__title {
+    margin-bottom: 7px;
+
+    font-size: 25px;
+  }
+
+  .about-chef__text {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-chef {
+    width: 540px;
+  }
+
+  .about-chef__title {
+    margin: 0;
+
+    font-size: 33px;
+    line-height: 42px;
+  }
+
+  .about-chef__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .about-chef__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about-chef__text--first-paragraph {
+    margin-bottom: 19px;
+  }
+}

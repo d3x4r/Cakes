@@ -456,15 +456,17 @@
     <section class="about-us">
       <h2 class="about-us__title section-title">О нас</h2>
       <div class="about-us__wrapper">
-        <picture>
-          <source type="image/webp" media="(min-width: 1220px)" srcset="img/about-us-desktop.webp">
+        <div class="about-us__image-container">
+          <picture>
+            <source type="image/webp" media="(min-width: 1220px)" srcset="img/about-us-desktop.webp">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/about-us-tablet.webp">
           <source type="image/webp" srcset="img/about-us-mobile.webp">
 
-          <source media="(min-width: 1220px)" srcset="img/about-us-desktop.png">
-          <source media="(min-width: 768px)" srcset="img/about-us-tablet.png">
-          <img class="about-us__image" src="img/about-us-mobile.png" alt="Кондитер">
-        </picture>
+            <source media="(min-width: 1220px)" srcset="img/about-us-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/about-us-tablet.jpg">
+            <img class="about-us__image" src="img/about-us-mobile.png" alt="Кондитер">
+          </picture>
+        </div>
         <ul class="about-us__social">
           <li class="about-us__social-item">
             <a class="about-us__social-link" href="#" aria-label="Ссылка на instagram">
@@ -490,19 +492,19 @@
       </div>
       <div class="about-chef">
         <h3 class="about-chef__title">О кондитере</h3>
-        <strong class="about-chef__text about-chef__text--strong">Кондитер – как призвание</strong>
-        <p class="about-chef__text">Павел — профессиональный повар в
-          различных гастрономических областях, но однажды его сердце покорило кондитерское искусство. С ранних лет он
+        <h4 class="about-chef__text about-chef__subtitle">Кондитер – как призвание</h4>
+        <p class="about-chef__text about-chef__text--first-paragraph">Павел - профессиональный повар в
+          различных гастрономических областях, но однажды его сердце покорило кондитерское искусство.<br>С ранних лет он
           увлекался утонченным мастерством и обратился к своим талантам
           как кондитер.</p>
-        <strong>Принцип – натуральные ингредиенты </strong>
-        <p class="about-chef__text about-chef__text--strong">Сегодня Павел радует изделиями не только близких, но и тех,
-          кто предпочитает качественную продукцию для торжества, а главным принципом является выбор натуральных
+        <h4 class=" about-chef__text about-chef__subtitle">Принцип – натуральные ингредиенты </h4>
+        <p class="about-chef__text">Сегодня Павел радует изделиями не только близких, но и тех,
+          кто предпочитает качественную продукцию для торжества, а&nbsp;главным принципом является выбор натуральных
           ингредиентов.
         </p>
       </div>
       <div class="about-us__citation">
-        <p class="about-us__citation-text"><q>
+        <p class="about-us__citation-text"><q class="about-us__citation-quote">
             Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в
             божественное блюдо.
           </q></p>
@@ -511,9 +513,9 @@
             <source type="image/webp" media="(min-width: 768px)" srcset="img/cheif-signature-tablet.webp">
             <source type="image/webp" srcset="img/cheif-signature-mobile.webp"> -->
 
-          <source media="(min-width: 1220px)" srcset="img/cheif-signature-desktop.png">
-          <source media="(min-width: 768px)" srcset="img/cheif-signature-tablet.png">
-          <img class="about-us__image" src="img/cheif-signature-mobile.png" alt="Подпись кондитера">
+          <source media="(min-width: 1220px)" srcset="img/chief-signature-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/chief-signature-tablet.png">
+          <img class="about-us__signature-image" src="img/chief-signature-mobile.png" alt="Подпись кондитера">
         </picture>
       </div>
     </section>
