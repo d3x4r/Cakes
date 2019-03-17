@@ -459,8 +459,8 @@
         <div class="about-us__image-container">
           <picture>
             <source type="image/webp" media="(min-width: 1220px)" srcset="img/about-us-desktop.webp">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/about-us-tablet.webp">
-          <source type="image/webp" srcset="img/about-us-mobile.webp">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/about-us-tablet.webp">
+            <source type="image/webp" srcset="img/about-us-mobile.webp">
 
             <source media="(min-width: 1220px)" srcset="img/about-us-desktop.jpg">
             <source media="(min-width: 768px)" srcset="img/about-us-tablet.jpg">
@@ -520,22 +520,29 @@
       </div>
     </section>
     <section class="advantages">
-      <h2 class="section-title">Наши преимущества</h2>
+      <h2 class="advantages__title section-title">Наши преимущества</h2>
       <span class="advantages__footnote">Почему нас выбирают ?</span>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <h4 class="advantages__item-title">Без искусственных добавок</h4>
-          <p class="advantages__text">Работаем с натуральными ингредиентами и свежими продуктами</p>
-        </li>
-        <li class="advantages__item">
-          <h4 class="advantages__item-title">Свежий торт в день торжества</h4>
-          <p class="advantages__text">Торты изготавливаются в течение суток до отправки</p>
-        </li>
-      </ul>
-      <h3 class="section-title">Забота о клиентах</h3>
-      <span class="advantages__footnote">Почему нас выбирают ?</span>
-      <p class="advantages__text">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был
-        создан исключительно для вас и для вашего события.</p>
+      <div class="advantages__container">
+        <div class="advantages__wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--natural">
+              <h4 class="advantages__item-title">Без искусственных добавок</h4>
+              <p class="advantages__text">Работаем с натуральными ингредиентами и&nbsp;свежими продуктами</p>
+            </li>
+            <li class="advantages__item advantages__item--delivery">
+              <h4 class="advantages__item-title">Свежий торт в день торжества</h4>
+              <p class="advantages__text advantages__text--delivery">Торты изготавливаются в течение
+                суток&nbsp;до&nbsp;отправки
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3 class="advantages__important-title section-title">Забота о клиентах</h3>
+        <span class="advantages__footnote advantages__important-footnote">Для нас важно</span>
+        <p class="advantages__text advantages__important-text">Нам важно чтобы каждый торт был безупречным, как внутри,
+          так и снаружи, чтобы он был
+          создан исключительно для вас и для вашего события.</p>
+      </div>
     </section>
     <section class="order-manual">
       <h2 class="section-title">Как заказать</h2>
